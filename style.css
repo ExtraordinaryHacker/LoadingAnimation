@@ -1,0 +1,43 @@
+.con{
+  margin: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+.con .dot1,.dot2,.dot3{
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 100%;
+}
+
+.dot1{
+  animation: dt 1s ease-in-out infinite;
+  animation-delay: 200ms;
+}
+
+.dot2{
+  animation: dt 1s ease-in-out infinite;
+  animation-delay: 300ms;
+}
+
+.dot3{
+  animation: dt 1s ease-in-out infinite;
+  animation-delay: 400ms;
+}
+
+
+
+@keyframes dt{
+  0%{
+    transform: translateY(0px);
+  }
+  28%{
+    transform: translateY(-12px);
+  }
+  44%{
+    opacity: 0.99%;
+    transform: translateY(0px);
+  }
+}
